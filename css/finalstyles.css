@@ -1,0 +1,307 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 0;
+	width: 100%;
+	color: rgba(194, 226, 198, 0.901);
+	font: normal 1em/1.5 sans-serif;
+}
+
+header{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav{
+	margin-bottom: 20px;
+	padding: 0;
+	display: block;
+	background-color: bisque;
+	justify-content: space-between;
+}
+
+nav ul{
+	list-style-type:none;
+	padding: 20px;
+	margin: 0;
+	overflow: hidden;
+	background-color:lightblue;
+	display: block;
+}
+
+li{
+	padding: 10px;
+	display: block;
+	text-align: center;
+}	
+
+a{
+	display: inline;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	padding: 20px 16px;
+	text-decoration: none;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navbarlogo {
+	display: block;
+	vertical-align: middle;
+}
+
+.topimage img{
+	padding: 20px;
+	width: 50%;
+}
+
+article h3{
+	font-size: 30px;
+	padding: 20px;
+}
+
+/*footer*/
+footer {
+	padding: 30px 40px 30px 150px;
+
+	background-color: rgb(143, 207, 234);
+	color: white;
+
+}
+
+/*Home*/
+
+.home-section {
+	padding: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.main img{
+	display: inline-block;
+}
+
+/*about*/
+.about-main {
+	margin: 0 20px;
+	padding: 20px;
+	color: blue;
+}
+.about-main h2{
+	color:blue;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 30px;
+}
+.about-main p{
+	margin-top: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 25px;
+}
+
+/*contact*/
+
+input{
+	margin: 20px;
+	border: none;
+	border-bottom: 2px solid rgb(51, 141, 237);
+}
+
+input [type=email] {
+	 display: block;
+ }
+
+ .button-style{
+	 margin: 10px;
+	 padding: 20px;
+	 background-color: rgb(44, 130, 215);
+	 color: white;
+ }
+
+/*blog*/
+.blog-main {
+	margin: 0;
+	padding: 0;
+}
+
+.blog-main p {
+	margin: 30px;
+}
+
+
+
+/*Product page*/
+
+.product-main {
+	display: block-inline;
+	justify-content: center;
+	align-items: center;
+}
+
+.product-main h1{
+	margin: 20px;
+	text-align: center;
+}
+
+.card {
+	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }  
+
+  .price {
+	color: black;
+	font-size: 22px;
+  }
+  
+  .card p {
+	margin: 5px;
+  }
+
+  .card button {
+	border: none;
+	outline: 0;
+	padding: 24px;
+	color: rgb(69, 69, 214);
+	background-color: rgb(146, 187, 236);
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+  }
+  
+  .card button:hover {
+	opacity: 0.7;
+  }
+
+
+
+
+/*For tablets*/
+@media screen and (min-width: 600px) {
+    li{
+        width: 25%;
+        margin: 0;
+        padding: 0;
+        float: left;
+        box-sizing: border-box;
+    }
+    nav{
+        overflow: hidden;
+	}
+
+li a:hover{
+	background-color: rgba(150, 104, 27, 1.00);
+	}
+
+.active{
+	background-color: rgba(150, 104, 27, 1.00);
+	}
+
+
+/*Product page*/
+
+.product-main {
+	display: block-inline;
+	justify-content: center;
+	align-items: center;
+	}
+
+.card {
+	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin-bottom: 30px;
+	display: relative;
+	float: left;
+	position: absolute;
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  	}  
+  .price {
+	color: black;
+	font-size: 22px;
+  	}
+  
+  .card p {
+	margin: 5px;
+  	}
+
+  .card button {
+	border: none;
+	outline: 0;
+	padding: 24px;
+	color: rgb(69, 69, 214);
+	background-color: rgb(146, 187, 236);
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+  	}
+  
+  .card button:hover {
+	opacity: 0.7;
+  	}
+}
+
+
+
+/* for desktop */
+@media screen and (min-width: 768px){
+	
+	/*navbar*/
+	nav ul li{
+		float: right;
+		display: inline;
+		list-style-type: none;
+	}
+	
+	li:first-child{
+		float:left;
+	}
+	nav ul li a.navbar-logo{
+		display: block;
+		height: 30%;	
+	}
+	
+	nav li a{
+		display: flex;
+		color: white;
+		padding: 1em 3em;
+		font-size: 20px;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;	
+	
+	}
+
+	/*product*/
+	
+	.product-main {
+		display: block-inline;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	
+	.card {
+		margin:20px;
+		padding: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		justify-content: left;
+
+	}
+	.card h1 {
+		margin:0;
+		padding: 20px;
+	}
